@@ -532,11 +532,19 @@ name = "rust-newspaper"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "flet" },
+]
+
+[package.dev-dependencies]
+dev = [
     { name = "flet", extra = ["all"] },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "flet", extras = ["all"], specifier = "==0.28.2" }]
+requires-dist = [{ name = "flet", specifier = "==0.28.2" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "flet", extras = ["all"], specifier = "==0.28.2" }]
 
 [[package]]
 name = "six"

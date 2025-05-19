@@ -1,4 +1,8 @@
-# RustNewspaperDev app
+# rust-newspaper
+
+## Status of Project
+
+**Work in progress. Unverified. In early development work.**
 
 ## Run the app
 
@@ -6,76 +10,56 @@
 
 Run as a desktop app:
 
-```
+```Shell
 uv run flet run
 ```
 
 Run as a web app:
 
-```
+```Shell
 uv run flet run --web
 ```
 
-### Poetry
-
-Install dependencies from `pyproject.toml`:
-
-```
-poetry install
-```
-
-Run as a desktop app:
-
-```
-poetry run flet run
-```
-
-Run as a web app:
-
-```
-poetry run flet run --web
-```
-
-For more details on running the app, refer to the [Getting Started Guide](https://flet.dev/docs/getting-started/).
+For more details on running the app, refer to the [Flet Getting Started Guide](https://flet.dev/docs/getting-started/).
 
 ## Build the app
 
 ### Android
 
-```
-flet build apk -v
+```Shell
+uv run flet build apk -v
 ```
 
-For more details on building and signing `.apk` or `.aab`, refer to the [Android Packaging Guide](https://flet.dev/docs/publish/android/).
+For more details on building and signing `.apk` or `.aab`, refer to the [Flet Android Packaging Guide](https://flet.dev/docs/publish/android/).
 
 ### iOS
 
-```
-flet build ipa -v
+```Shell
+uv run flet build ipa -v
 ```
 
-For more details on building and signing `.ipa`, refer to the [iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
+For more details on building and signing `.ipa`, refer to the [Flet iOS Packaging Guide](https://flet.dev/docs/publish/ios/).
 
 ### macOS
 
-```
-flet build macos -v
+```Shell
+uv run flet build macos -v
 ```
 
-For more details on building macOS package, refer to the [macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
+For more details on building macOS package, refer to the [Flet macOS Packaging Guide](https://flet.dev/docs/publish/macos/).
 
 ### Linux
 
-```
-flet build linux -v
+```Shell
+uv run flet build linux -v
 ```
 
-For more details on building Linux package, refer to the [Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
+For more details on building Linux package, refer to the [Flet Linux Packaging Guide](https://flet.dev/docs/publish/linux/).
 
 ### Windows
 
-```
-flet build windows -v
+```Shell
+uv run flet build windows -v
 ```
 
-For more details on building Windows package, refer to the [Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
+For more details on building Windows package, refer to the [Flet Windows Packaging Guide](https://flet.dev/docs/publish/windows/).
