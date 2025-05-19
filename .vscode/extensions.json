@@ -52,11 +52,6 @@
     // Improves test workflow and visibility
     "LittleFoxTeam.vscode-python-test-adapter",
 
-    // Python Docstring Generator - Automated documentation
-    // Generates docstring templates based on function signatures
-    // Helps maintain consistent and complete documentation
-    "njpwerner.autodocstring",
-
     // =========================================================================
     // CONFIGURATION & LANGUAGE SUPPORT
     // Improves handling of project configuration files
