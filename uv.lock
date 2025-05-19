@@ -536,7 +536,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "flet", extras = ["all"], specifier = ">=0.28.2" }]
+requires-dist = [{ name = "flet", extras = ["all"], specifier = "==0.28.2" }]
 
 [[package]]
 name = "six"
