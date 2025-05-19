@@ -1,16 +1,18 @@
 {
   // VS CODE EXTENSIONS RECOMMENDATIONS CONFIGURATION FOR THIS "rust-newspaper"
   // (PYTHON/FLET BASED) PROJECT
-  // PURPOSE: Recommends VS Code extensions to standardize and enhance the development
-  // experience across project developers
-  // SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation of third-party
-  // extensions that run with VS Code privileges, have access to workspace files, and may
-  // have wider developer system security impacts; represents a trust decision for each extension
-  // with open-ended vulnerability potential through the extension supply chain
+  // PURPOSE: Recommends VS Code extensions to standardize and enhance the
+  // development experience across project developers
+  // SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation of
+  // third-party extensions that run with VS Code privileges, have access to
+  // workspace files, and may have wider developer system security impacts;
+  // represents a trust decision for each extension with open-ended
+  // vulnerability potential through the extension supply chain
   // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - While extensions
-  // themselves aren't included in builds, extensions such as code quality tools may
-  // indirectly affect application security through coding standards and could
-  // potentially introduce vulnerabilities that affect end-user application
+  // themselves aren't included in builds, extensions such as code quality tools
+  // may indirectly affect application security through coding standards and
+  // could potentially introduce vulnerabilities that affect end-user
+  // application
 
   // Extensions recommended for this workspace
   // VSCode will prompt to install these automatically when opening the project
