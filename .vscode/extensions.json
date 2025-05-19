@@ -1,5 +1,6 @@
 {
-  // VS CODE EXTENSIONS RECOMMENDATIONS CONFIGURATION FOR THIS "rust-newspaper" PROJECT
+  // VS CODE EXTENSIONS RECOMMENDATIONS CONFIGURATION FOR THIS "rust-newspaper"
+  // (PYTHON/FLET BASED) PROJECT
   // PURPOSE: Recommends VS Code extensions to standardize and enhance the development
   // experience across project developers
   // SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation of third-party
@@ -14,10 +15,10 @@
   // Extensions recommended for this workspace
   // VSCode will prompt to install these automatically when opening the project
   "recommendations": [
-    // =====================================================================
+    // =========================================================================
     // CORE PYTHON DEVELOPMENT EXTENSIONS
     // Essential for project code quality and consistency
-    // =====================================================================
+    // =========================================================================
 
     // Python - Core Python language support
     // Provides IntelliSense, linting, debugging, and more for Python
@@ -54,10 +55,10 @@
     // Helps maintain consistent and complete documentation
     "njpwerner.autodocstring",
 
-    // =====================================================================
+    // =========================================================================
     // CONFIGURATION & LANGUAGE SUPPORT
     // Improves handling of project configuration files
-    // =====================================================================
+    // =========================================================================
 
     // Even Better TOML - Enhanced TOML support
     // Provides syntax highlighting and validation for TOML files
@@ -69,10 +70,14 @@
     // Helps prevent typos in comments, strings, and documentation
     "streetsidesoftware.code-spell-checker",
 
-    // =====================================================================
+    // Prettier - Consistent code formatting
+    // Used for JSON files
+    "esbenp.prettier-vscode",
+
+    // =========================================================================
     // DOCUMENTATION & MARKDOWN SUPPORT
     // Essential for project documentation
-    // =====================================================================
+    // =========================================================================
 
     // Markdown All in One - Complete markdown support
     // Provides shortcuts, auto-preview, and formatting for markdown
@@ -99,20 +104,20 @@
     // Useful for referencing documentation without leaving VS Code
     "tomoki1207.pdf",
 
-    // =====================================================================
+    // =========================================================================
     // SOURCE CONTROL & COLLABORATION
     // Improves team workflow and change management
-    // =====================================================================
+    // =========================================================================
 
     // GitLens - Enhanced Git capabilities
     // Provides inline blame annotations and powerful history exploration
     // Improves understanding of code history and authorship
     "eamodio.gitlens",
 
-    // =====================================================================
+    // =========================================================================
     // QUALITY OF LIFE
     // Improves workspace harmonization across developers
-    // =====================================================================
+    // =========================================================================
 
     // Material Icon Theme - Custom file and folder icons
     // Provides visually distinct icons for different file types and folders

@@ -1,0 +1,96 @@
+{
+  // VS CODE WORKSPACE SETTINGS FOR FOR THIS "rust-newspaper" (PYTHON/FLET
+  // BASED) PROJECT
+  // PURPOSE: Standardize VS Code behavior, code style, and Python validation
+  // across developer environments
+  // SECURITY IMPACT FOR DEVELOPERS: Significant - Affects VS Code behavior and
+  // code validation within this project workspace; also affects some VS Code
+  // extensions within this project workspace
+  // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - Affects end-user
+  // application (indirectly) through things such as code styling and validation
+  // settings
+
+  // ===========================================================================
+  // FILE TYPE SPECIFIC SETTINGS
+  // ===========================================================================
+
+  // PYTHON SPECIFIC SETTINGS
+  "[python]": {
+    // Set the "Ruff" extension as the default formatter for Python files
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    // Set Python files to be automatically formatted on save
+    "editor.formatOnSave": true,
+  },
+
+  // JSON AND JSON WITH COMMENTS ("jsonc") SPECIFIC SETTINGS
+  // Uses "Prettier" extension
+  "[json, jsonc]": {
+    // Set the "Prettier" extension as the default formatter for JSON files
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // Set JSON files to be automatically formatted on save
+    "editor.formatOnSave": true
+  },
+
+  // MARKDOWN SPECIFIC SETTINGS
+  "[markdown]": {
+    // Set the "markdownlint" extension as the default formatter for Markdown
+    // files
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    // Set Markdown files to be automatically formatted on save
+    "editor.formatOnSave": true,
+  },
+
+  // ===========================================================================
+  // AMERICAN ENGLISH SPELL CHECKING
+  // ===========================================================================
+
+  // Enable the "Code Spell Checker" extension spell checking functionality
+  "cSpell.enabled": true,
+  // Use American English spelling for spell check
+  "cSpell.language": "en-US",
+  // Add additional words to workspace dictionary, ensuring they are not flagged
+  // as spelling mistakes
+  "cSpell.words": ["flet"],
+
+  // ===========================================================================
+  // CONCISTENCY ENSURANCE BETWEEN PLATFORM
+  // ===========================================================================
+
+  // USE SPACES INSTEAD OF TAB CHARACTERS
+  // (Applies when the tab key ("↹") is pressed)
+  "editor.insertSpaces": true,
+
+  // AUTOMATICALLY ADD A NEWLINE CHARACTER AT THE END OF A FILE
+  // Ensures that all lines end in a blank line, ensuring that we follow
+  // established good practices
+  "files.insertFinalNewline": true,
+
+  // AUTOMATICALLY REMOVE WHITESPACES AT LINE ENDINGS
+  "files.trimTrailingWhitespace": true,
+
+  // USE CONSISTENT LINE ENDING CHARACTERS
+  // Sets end of line character as the Linux/Unix default of "\n" for all
+  // platform, instead of the Windows default of "\r\n", or Mac default of "\r",
+  // especially valuable for ensuring better Git behaviour
+  "files.eol": "\n",
+
+  // ===========================================================================
+  // VISUAL AIDS IN EDITOR
+  // ===========================================================================
+
+  // SET VERTICAL RULERS FOR VISUAL AID IN EDITOR
+  // First ruler at 80 characters and second ruler at 100 characters
+  // - 80 characters vertical ruler should be used when possible as max length
+  // for a comment before breaking it into the next line (like how it's done
+  // with this comment)
+  // - 100 characters vertical ruler should used as max length for a code
+  // line, when possible to do so sensibly
+  "editor.rulers": [80, 100],
+
+  // ENABLE DISTINCT COLORS FOR BRACKET PAIRS FOR VISUAL AID IN EDITOR
+  "editor.bracketPairColorization.enabled": true,
+
+  // ENABLE COLORED VERTICAL LINES FOR CONNECTING MATCHING BRACKETS FOR VISUAL
+  // AID IN EDITOR
+  "editor.guides.bracketPairs": true
+}
