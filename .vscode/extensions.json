@@ -1,0 +1,131 @@
+{
+  // VS CODE EXTENSIONS RECOMMENDATIONS CONFIGURATION FOR THIS "rust-newspaper" PROJECT
+  // PURPOSE: Recommends VS Code extensions to standardize and enhance the development
+  // experience across project developers
+  // SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation of third-party
+  // extensions that run with VS Code privileges, have access to workspace files, and may
+  // have wider developer system security impacts; represents a trust decision for each extension
+  // with open-ended vulnerability potential through the extension supply chain
+  // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - While extensions
+  // themselves aren't included in builds, extensions such as code quality tools may
+  // indirectly affect application security through coding standards and could
+  // potentially introduce vulnerabilities that affect end-user application
+
+  // Extensions recommended for this workspace
+  // VSCode will prompt to install these automatically when opening the project
+  "recommendations": [
+    // =====================================================================
+    // CORE PYTHON DEVELOPMENT EXTENSIONS
+    // Essential for project code quality and consistency
+    // =====================================================================
+
+    // Python - Core Python language support
+    // Provides IntelliSense, linting, debugging, and more for Python
+    // Foundation for all Python development in VS Code
+    "ms-python.python",
+
+    // Pylance - Python language server
+    // Enhances VS Code's Python experience with improved type information
+    // Provides faster and more accurate auto-completions
+    "ms-python.vscode-pylance",
+
+    // debugpy - Python debugging
+    // Enables debugging Python code in VS Code
+    // Essential for troubleshooting and development
+    "ms-python.debugpy",
+
+    // Ruff - Fast Python linter and formatter
+    // Combines multiple tools (flake8, black, isort, etc.) in one package
+    // Ensures code quality and consistent style
+    "charliermarsh.ruff",
+
+    // mypy - Static type checking
+    // Verifies Python type annotations for safer code
+    // Catches type-related errors before runtime
+    "matangover.mypy",
+
+    // Python Test Explorer - Visual test runner
+    // Provides a visual interface for running and debugging Python tests
+    // Improves test workflow and visibility
+    "LittleFoxTeam.vscode-python-test-adapter",
+
+    // Python Docstring Generator - Automated documentation
+    // Generates docstring templates based on function signatures
+    // Helps maintain consistent and complete documentation
+    "njpwerner.autodocstring",
+
+    // =====================================================================
+    // CONFIGURATION & LANGUAGE SUPPORT
+    // Improves handling of project configuration files
+    // =====================================================================
+
+    // Even Better TOML - Enhanced TOML support
+    // Provides syntax highlighting and validation for TOML files
+    // Valuable for working with pyproject.toml configuration
+    "tamasfe.even-better-toml",
+
+    // Code Spell Checker - Spelling validation
+    // Checks spelling in code and documentation
+    // Helps prevent typos in comments, strings, and documentation
+    "streetsidesoftware.code-spell-checker",
+
+    // =====================================================================
+    // DOCUMENTATION & MARKDOWN SUPPORT
+    // Essential for project documentation
+    // =====================================================================
+
+    // Markdown All in One - Complete markdown support
+    // Provides shortcuts, auto-preview, and formatting for markdown
+    // Valuable for displaying Markdown project documentation
+    "yzhang.markdown-all-in-one",
+
+    // Markdown Mermaid - Diagram support in markdown
+    // Renders Mermaid diagrams in markdown preview
+    // Useful for technical documentation with visualizations
+    "bierner.markdown-mermaid",
+
+    // Markdown PDF - Export markdown to PDF
+    // Converts markdown files to PDF for distribution
+    // Helpful for creating shareable documentation
+    "yzane.markdown-pdf",
+
+    // Markdown Lint - Markdown style checking
+    // Enforces consistent styling in markdown files
+    // Improves readability and maintainability of documentation
+    "DavidAnson.vscode-markdownlint",
+
+    // PDF Viewer - View PDFs within VS Code
+    // Opens PDF files directly in the editor
+    // Useful for referencing documentation without leaving VS Code
+    "tomoki1207.pdf",
+
+    // =====================================================================
+    // SOURCE CONTROL & COLLABORATION
+    // Improves team workflow and change management
+    // =====================================================================
+
+    // GitLens - Enhanced Git capabilities
+    // Provides inline blame annotations and powerful history exploration
+    // Improves understanding of code history and authorship
+    "eamodio.gitlens",
+
+    // =====================================================================
+    // QUALITY OF LIFE
+    // Improves workspace harmonization across developers
+    // =====================================================================
+
+    // Material Icon Theme - Custom file and folder icons
+    // Provides visually distinct icons for different file types and folders
+    // Improves project navigation and file type recognition at a glance
+    "PKief.material-icon-theme",
+
+    // Indent Rainbow - Colorizes indentations
+    // Makes indentation levels visually distinct with alternating colors
+    // Improves code readability
+    "oderwat.indent-rainbow"
+  ],
+
+  // Extensions that might conflict with this configuration
+  // None identified currently, but can be added if conflicts arise
+  "unwantedRecommendations": []
+}
