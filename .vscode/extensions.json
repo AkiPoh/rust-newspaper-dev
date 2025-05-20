@@ -116,6 +116,11 @@
     // Improves workspace harmonization across developers
     // =========================================================================
 
+    // Todo Tree - Task comment highlighting
+    // Finds and highlights TODO, FIXME, and other comment tags in your code
+    // Makes it easier to track tasks that need attention across the project
+    "Gruntfuggly.todo-tree",
+
     // Material Icon Theme - Custom file and folder icons
     // Provides visually distinct icons for different file types and folders
     // Improves project navigation and file type recognition at a glance
