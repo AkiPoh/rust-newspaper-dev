@@ -33,7 +33,7 @@
   // MARKDOWN SPECIFIC SETTINGS
   "[markdown]": {
     // Set the "Prettier" extension as the default formatter for Markdown files
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     // Set Markdown files to be automatically formatted on save
     "editor.formatOnSave": true
   },

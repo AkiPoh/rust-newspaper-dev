@@ -33,9 +33,6 @@
     // FOR PYTHON LINTING AND FORMATTING
     // - For Python provides powerful formatter and linter functionality in one
     // package
-    // TODO finalise implementation of this extension, especially in regard to
-    // .vscode/settings.json, adding this extension via uv to the project,
-    // and configuring Ruff settings via pyproject.toml
     "charliermarsh.ruff",
 
     // RECOMMEND "PYLANCE" EXTENSION BY "MICROSOFT"
@@ -46,12 +43,6 @@
     // TODO finalise implementation of this extension, especially in regard to
     // .vscode/settings.json
     "ms-python.vscode-pylance",
-
-    // RECOMMEND "MYPY" EXTENSION BY "MATAN GOVER"
-    // FOR BETTER PYTHON STATIC TYPE CHECKING
-    // - For Python provides improved static type checking that takes into
-    // consideration the whole workspace configuration
-    "matangover.mypy",
 
     // RECOMMEND "PYTHON DEBUGGER" EXTENSION BY "MICROSOFT"
     // FOR BETTER PYTHON DEBUGGING FUNCTIONALITY
@@ -156,8 +147,6 @@
     // FOR HIGHLIGHTING COMMENT TAGS IN CODE, SUCH AS "TODO"
     // - From code comments finds and highlights TODO, FIXME, and other comment
     // tags, for a clearer VS Code UI
-    // TODO finalise implementation of this extension, especially in regard to
-    // .vscode/settings.json
     "Gruntfuggly.todo-tree"
   ],
 
