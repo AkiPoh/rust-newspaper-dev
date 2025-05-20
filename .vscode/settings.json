@@ -1,7 +1,7 @@
 {
   // VS CODE WORKSPACE SETTINGS FOR FOR THIS "rust-newspaper" (PYTHON/FLET
   // BASED) PROJECT
-  // PURPOSE: Standardize VS Code behavior, code style, and Python validation
+  // PURPOSE: Standardize VS Code behavior, code styling, and Python validation
   // across developer environments
   // SECURITY IMPACT FOR DEVELOPERS: Significant - Affects VS Code behavior and
   // code validation within this project workspace; also affects some VS Code
@@ -19,11 +19,10 @@
     // Set the "Ruff" extension as the default formatter for Python files
     "editor.defaultFormatter": "charliermarsh.ruff",
     // Set Python files to be automatically formatted on save
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
 
   // JSON AND JSON WITH COMMENTS ("jsonc") SPECIFIC SETTINGS
-  // Uses "Prettier" extension
   "[json, jsonc]": {
     // Set the "Prettier" extension as the default formatter for JSON files
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -37,7 +36,7 @@
     // files
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     // Set Markdown files to be automatically formatted on save
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
 
   // ===========================================================================
