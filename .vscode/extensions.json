@@ -3,15 +3,15 @@
   // (PYTHON/FLET BASED) PROJECT
   // PURPOSE: Recommends VS Code extensions to standardize and enhance the
   // development experience across project developers
-  // SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation of
-  // third-party extensions that run with VS Code privileges, have access to
+  // POTENTIAL SECURITY IMPACT FOR DEVELOPERS: Major - Recommends installation
+  // of third-party extensions that run with VS Code privileges, have access to
   // workspace files, and may have wider developer system security impacts;
   // represents a trust decision for each extension with open-ended
   // vulnerability potential
-  // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - While extensions
-  // themselves aren't included in builds, they (indirectly) affect application
-  // security through coding standards and could potentially introduce
-  // vulnerabilities that affect end-user application
+  // POTENTIAL SECURITY IMPACT FOR APPLICATION END-USERS: Significant - While
+  // extensions themselves aren't included in builds, they (indirectly) affect
+  // application security through coding standards and could potentially
+  // introduce vulnerabilities that affect end-user application
 
   // RECOMMENDED EXTENSIONS FOR THIS PROJECT WORKSPACE
   // - VS Code prompts to install these recommendations if they are missing from
@@ -85,21 +85,11 @@
     // =========================================================================
 
     // RECOMMEND "PRETTIER" EXTENSION BY "PRETTIER"
-    // FOR CONSISTENT JSON FORMATTING
-    // - For various mostly web dev focused languages offers consistent code
+    // FOR CONSISTENT FORMATTING OF VARIOUS FILES SUCH AS JSON, MARKDOWN, ETC
+    // - For various (mostly web dev focused) languages offers consistent code
     // formatting functionality
     // - Used for JSON file formatting for our workspace project
     "esbenp.prettier-vscode",
-
-    // =========================================================================
-    // ENGLISH SPELL CHECKING
-    // =========================================================================
-
-    // RECOMMEND "CODE SPELL CHECKER" EXTENSION BY "STREET SIDE SOFTWARE"
-    // FOR BASIC ENGLISH SPELL CHECKING
-    // - For English writing enables basic spelling checking in code and
-    // documentation
-    "streetsidesoftware.code-spell-checker",
 
     // =========================================================================
     // MARKDOWN ([file-name].md) RELATED EXTENSIONS
@@ -110,11 +100,6 @@
     // - For Markdown provides nearly comprehensive support including keyboard shortcuts,
     // auto-preview, formatting, automatically updated tables of contents, etc
     "yzhang.markdown-all-in-one",
-
-    // RECOMMEND "MARKDOWNLINT" EXTENSION BY "DAVID ANSON"
-    // FOR MARKDOWN LINTING AND BEST PRACTICES ACCORDANCE CHECKING
-    // - For Markdown provides linting and style checking functionality
-    "DavidAnson.vscode-markdownlint",
 
     // RECOMMEND "MARKDOWN PREVIEW MERMAID SUPPORT" EXTENSION BY "MATT BIERNER"
     // FOR SHOWING MERMAID DIAGRAMS IN MARKDOWN PREVIEWS

@@ -1,26 +1,26 @@
-import flet as ft
+# MAIN APPLICATION ENTRY POINT FOR "rust-newspaper" (PYTHON/FLET BASED) PROJECT
+# PURPOSE: Serves as the entry point for the Flet application, this is the
+# "starting point" of our application
+# POTENTIAL SECURITY IMPACT FOR DEVELOPERS: Major - This is the application
+# entry point
+# POTENTIAL SECURITY IMPACT FOR APPLICATION END-USERS: Major - This is the
+# application entry point
 
+# Import the Flet framework
+# - Flet is a framework that allows building web, desktop and mobile
+# applications in Python
+# - Flet is built on top of Flutter
+#   - Flutter is an open source framework by Google for building beautiful,
+#   natively compiled, multi-platform applications from a single codebase.
+import flet
 
-def main(page: ft.Page):
-    counter = ft.Text("0", size=50, data=0)
+# Import our "counter_app" (src\counter_app.py) module
+# - Used by us as a placeholder application; useful sometimes for validating
+# that things such as compiling work as we expect with a very lightweight
+# application
+import counter_app
 
-    def increment_click(e):
-        counter.data += 1
-        counter.value = str(counter.data)
-        counter.update()
-
-    page.floating_action_button = ft.FloatingActionButton(
-        icon=ft.Icons.ADD, on_click=increment_click
-    )
-    page.add(
-        ft.SafeArea(
-            ft.Container(
-                counter,
-                alignment=ft.alignment.center,
-            ),
-            expand=True,
-        )
-    )
-
-
-ft.app(main)
+# Start the Flet application
+# - Calls the "flet" module's "app" function to initialize our application with
+# "counter_app" module's "main" function
+flet.app(counter_app.main)

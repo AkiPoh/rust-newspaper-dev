@@ -3,12 +3,12 @@
   // BASED) PROJECT
   // PURPOSE: Standardize VS Code behavior, code styling, and Python validation
   // across developer environments
-  // SECURITY IMPACT FOR DEVELOPERS: Significant - Affects VS Code behavior and
-  // code validation within this project workspace; also affects some VS Code
-  // extensions within this project workspace
-  // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - Affects end-user
-  // application (indirectly) through things such as code styling and validation
-  // settings
+  // POTENTIAL SECURITY IMPACT FOR DEVELOPERS: Significant - Affects VS Code
+  // behavior and code validation within this project workspace; also affects
+  // some VS Code extensions within this project workspace
+  // POTENTIAL SECURITY IMPACT FOR APPLICATION END-USERS: Significant - Affects
+  // end-user application (indirectly) through things such as code styling and
+  // validation settings
 
   // ===========================================================================
   // FILE TYPE SPECIFIC SETTINGS
@@ -32,24 +32,11 @@
 
   // MARKDOWN SPECIFIC SETTINGS
   "[markdown]": {
-    // Set the "markdownlint" extension as the default formatter for Markdown
-    // files
+    // Set the "Prettier" extension as the default formatter for Markdown files
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
     // Set Markdown files to be automatically formatted on save
     "editor.formatOnSave": true
   },
-
-  // ===========================================================================
-  // AMERICAN ENGLISH SPELL CHECKING
-  // ===========================================================================
-
-  // Enable the "Code Spell Checker" extension spell checking functionality
-  "cSpell.enabled": true,
-  // Use American English spelling for spell check
-  "cSpell.language": "en-US",
-  // Add additional words to workspace dictionary, ensuring they are not flagged
-  // as spelling mistakes
-  "cSpell.words": ["flet"],
 
   // ===========================================================================
   // CONCISTENCY ENSURANCE BETWEEN PLATFORM

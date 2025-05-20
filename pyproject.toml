@@ -8,8 +8,13 @@ authors = [
     { name = "rust-newspaper", email = "59505647+AkiPoh@users.noreply.github.com" }
 ]
 dependencies = [
-  "flet==0.28.2"
+  "flet==0.28.2",
+  "ruff==0.11.10",
 ]
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
 
 [tool.flet]
 # org name in reverse domain name notation, e.g. "com.mycompany".
