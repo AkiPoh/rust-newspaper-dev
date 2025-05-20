@@ -7,132 +7,177 @@
   // third-party extensions that run with VS Code privileges, have access to
   // workspace files, and may have wider developer system security impacts;
   // represents a trust decision for each extension with open-ended
-  // vulnerability potential through the extension supply chain
+  // vulnerability potential
   // SECURITY IMPACT FOR APPLICATION END-USERS: Significant - While extensions
-  // themselves aren't included in builds, extensions such as code quality tools
-  // may indirectly affect application security through coding standards and
-  // could potentially introduce vulnerabilities that affect end-user
-  // application
+  // themselves aren't included in builds, they (indirectly) affect application
+  // security through coding standards and could potentially introduce
+  // vulnerabilities that affect end-user application
 
-  // Extensions recommended for this workspace
-  // VSCode will prompt to install these automatically when opening the project
+  // RECOMMENDED EXTENSIONS FOR THIS PROJECT WORKSPACE
+  // - VS Code prompts to install these recommendations if they are missing from
+  // the user.
+  // - To view recommended extensions open the VS Code Command Palette (default
+  // shortcut: "ctrl" + "shift" + "p") and search for:
+  // "Extensions: Show Recommended Extensions"
   "recommendations": [
     // =========================================================================
-    // CORE PYTHON DEVELOPMENT EXTENSIONS
-    // Essential for project code quality and consistency
+    // PYTHON ([file-name].py) RELATED EXTENSIONS
     // =========================================================================
 
-    // Python - Core Python language support
-    // Provides IntelliSense, linting, debugging, and more for Python
-    // Foundation for all Python development in VS Code
+    // RECOMMEND "PYTHON" EXTENSION BY "MICROSOFT"
+    // FOR BASIC PYTHON LANGUAGE SUPPORT
+    // - For Python provides IntelliSense, linting, debugging, and more
     "ms-python.python",
 
-    // Pylance - Python language server
-    // Enhances VS Code's Python experience with improved type information
-    // Provides faster and more accurate auto-completions
-    "ms-python.vscode-pylance",
-
-    // debugpy - Python debugging
-    // Enables debugging Python code in VS Code
-    // Essential for troubleshooting and development
-    "ms-python.debugpy",
-
-    // Ruff - Fast Python linter and formatter
-    // Combines multiple tools (flake8, black, isort, etc.) in one package
-    // Ensures code quality and consistent style
+    // RECOMMEND "RUFF" EXTENSION BY "ASTRAL SOFTWARE"
+    // FOR PYTHON LINTING AND FORMATTING
+    // - For Python provides powerful formatter and linter functionality in one
+    // package
+    // TODO finalise implementation of this extension, especially in regard to
+    // .vscode/settings.json, adding this extension via uv to the project,
+    // and configuring Ruff settings via pyproject.toml
     "charliermarsh.ruff",
 
-    // mypy - Static type checking
-    // Verifies Python type annotations for safer code
-    // Catches type-related errors before runtime
+    // RECOMMEND "PYLANCE" EXTENSION BY "MICROSOFT"
+    // FOR IMPROVED PYTHON CODE WRITING EXPERIENCE
+    // - For Python provides a performant, feature-rich language server
+    // improving the IntelliSense experience through things such as static type
+    // checking
+    // TODO finalise implementation of this extension, especially in regard to
+    // .vscode/settings.json
+    "ms-python.vscode-pylance",
+
+    // RECOMMEND "MYPY" EXTENSION BY "MATAN GOVER"
+    // FOR BETTER PYTHON STATIC TYPE CHECKING
+    // - For Python provides improved static type checking that takes into
+    // consideration the whole workspace configuration
     "matangover.mypy",
 
-    // Python Test Explorer - Visual test runner
-    // Provides a visual interface for running and debugging Python tests
-    // Improves test workflow and visibility
+    // RECOMMEND "PYTHON DEBUGGER" EXTENSION BY "MICROSOFT"
+    // FOR BETTER PYTHON DEBUGGING FUNCTIONALITY
+    // - For Python enables interactive debugging with breakpoints, variable
+    // inspection, and step-through execution
+    // TODO finalise implementation of this extension, especially in regard to
+    // .vscode/settings.json
+    "ms-python.debugpy",
+
+    // RECOMMEND "PYTHON TEST EXPLORER FOR VISUAL STUDIO CODE" EXTENSION BY
+    // "LITTLE FOX TEAM"
+    // FOR BETTER PYTHON TESTING VISUALISATIONS
+    // - For Python provides an improved visual interface for running and
+    // debugging Python tests
+    // TODO finalise implementation of this extension, especially in regard to
+    // .vscode/settings.json
     "LittleFoxTeam.vscode-python-test-adapter",
 
     // =========================================================================
-    // CONFIGURATION & LANGUAGE SUPPORT
-    // Improves handling of project configuration files
+    // TOML ([file-name].toml) RELATED EXTENSIONS
     // =========================================================================
 
-    // Even Better TOML - Enhanced TOML support
-    // Provides syntax highlighting and validation for TOML files
-    // Valuable for working with pyproject.toml configuration
+    // RECOMMEND "EVEN BETTER TOML" EXTENSION BY "TAMASFE"
+    // FOR GOOD TOML LANGUAGE SUPPORT
+    // - For TOML provides improved support via syntax highlighting, validation,
+    // formatting, etc
     "tamasfe.even-better-toml",
 
-    // Code Spell Checker - Spelling validation
-    // Checks spelling in code and documentation
-    // Helps prevent typos in comments, strings, and documentation
-    "streetsidesoftware.code-spell-checker",
+    // =========================================================================
+    // JSON ([file-name].json) RELATED EXTENSIONS
+    // =========================================================================
 
-    // Prettier - Consistent code formatting
-    // Used for JSON files
+    // RECOMMEND "PRETTIER" EXTENSION BY "PRETTIER"
+    // FOR CONSISTENT JSON FORMATTING
+    // - For various mostly web dev focused languages offers consistent code
+    // formatting functionality
+    // - Used for JSON file formatting for our workspace project
     "esbenp.prettier-vscode",
 
     // =========================================================================
-    // DOCUMENTATION & MARKDOWN SUPPORT
-    // Essential for project documentation
+    // ENGLISH SPELL CHECKING
     // =========================================================================
 
-    // Markdown All in One - Complete markdown support
-    // Provides shortcuts, auto-preview, and formatting for markdown
-    // Valuable for displaying Markdown project documentation
+    // RECOMMEND "CODE SPELL CHECKER" EXTENSION BY "STREET SIDE SOFTWARE"
+    // FOR BASIC ENGLISH SPELL CHECKING
+    // - For English writing enables basic spelling checking in code and
+    // documentation
+    "streetsidesoftware.code-spell-checker",
+
+    // =========================================================================
+    // MARKDOWN ([file-name].md) RELATED EXTENSIONS
+    // =========================================================================
+
+    // RECOMMEND "MARKDOWN ALL IN ONE" EXTENSION BY "YU ZHANG"
+    // FOR NEARLY COMPREHENSIVE MARKDOWN SUPPORT
+    // - For Markdown provides nearly comprehensive support including keyboard shortcuts,
+    // auto-preview, formatting, automatically updated tables of contents, etc
     "yzhang.markdown-all-in-one",
 
-    // Markdown Mermaid - Diagram support in markdown
-    // Renders Mermaid diagrams in markdown preview
-    // Useful for technical documentation with visualizations
-    "bierner.markdown-mermaid",
-
-    // Markdown PDF - Export markdown to PDF
-    // Converts markdown files to PDF for distribution
-    // Helpful for creating shareable documentation
-    "yzane.markdown-pdf",
-
-    // Markdown Lint - Markdown style checking
-    // Enforces consistent styling in markdown files
-    // Improves readability and maintainability of documentation
+    // RECOMMEND "MARKDOWNLINT" EXTENSION BY "DAVID ANSON"
+    // FOR MARKDOWN LINTING AND BEST PRACTICES ACCORDANCE CHECKING
+    // - For Markdown provides linting and style checking functionality
     "DavidAnson.vscode-markdownlint",
 
-    // PDF Viewer - View PDFs within VS Code
-    // Opens PDF files directly in the editor
-    // Useful for referencing documentation without leaving VS Code
+    // RECOMMEND "MARKDOWN PREVIEW MERMAID SUPPORT" EXTENSION BY "MATT BIERNER"
+    // FOR SHOWING MERMAID DIAGRAMS IN MARKDOWN PREVIEWS
+    // - For Markdown previews adds mermaid diagram and flowchart support
+    "bierner.markdown-mermaid",
+
+    // RECOMMEND "MARKDOWN PDF" EXTENSION BY "YZANE"
+    // FOR CONVERTING MARKDOWN FILES TO PDF
+    // - Allows for converting Markdown files to PDF
+    // - Helpful for creating quickly shareable documentation to people who are
+    // not as familiar with Markdown
+    // - Highly optional; not required for normal dev workflow; though sometimes
+    // rather useful
+    "yzane.markdown-pdf",
+
+    // =========================================================================
+    // PDF ([file-name].pdf) RELATED EXTENSIONS
+    // =========================================================================
+
+    // RECOMMEND "VSCODE-PDF" EXTENSION BY "TOMOKI1207"
+    // FOR VIEWING PDFs DIRECTLY IN VS CODE
+    // - Enables PDF file viewing directly in VS Code
+    // - Highly optional; not required for normal dev workflow; though sometimes
+    // rather useful
     "tomoki1207.pdf",
 
     // =========================================================================
-    // SOURCE CONTROL & COLLABORATION
-    // Improves team workflow and change management
+    // GIT (THE VERSION CONTROL SYSTEM WE USE) RELATED EXTENSIONS
     // =========================================================================
 
-    // GitLens - Enhanced Git capabilities
-    // Provides inline blame annotations and powerful history exploration
-    // Improves understanding of code history and authorship
-    "eamodio.gitlens",
+    // RECOMMEND "BETTER GIT LINE BLAME" EXTENSION BY "MITCHELL KEMBER"
+    // FOR PROVIDING INLINE GIT BLAME VISUALISATIONS
+    // - Provides inline Git blame annotations visually, in a well-implemented and
+    // light-weight package, for a clearer VS Code UI
+    "mk12.better-git-line-blame",
 
     // =========================================================================
-    // QUALITY OF LIFE
-    // Improves workspace harmonization across developers
+    // VS CODE UI CLARITY RELATED EXTENSIONS
     // =========================================================================
 
-    // Todo Tree - Task comment highlighting
-    // Finds and highlights TODO, FIXME, and other comment tags in your code
-    // Makes it easier to track tasks that need attention across the project
-    "Gruntfuggly.todo-tree",
+    // RECOMMEND "INDENT-RAINBOW" EXTENSION BY "ODERWAT"
+    // FOR IMPROVED VISUAL CLARITY OF CODE INDENTATION LEVELS IN VS CODE
+    // - Makes indentation levels visually distinct with alternating colors,
+    // improving code clarity, for a clearer VS Code UI
+    "oderwat.indent-rainbow",
 
-    // Material Icon Theme - Custom file and folder icons
-    // Provides visually distinct icons for different file types and folders
-    // Improves project navigation and file type recognition at a glance
+    // RECOMMEND "MATERIAL ICON THEME" EXTENSION BY "PHILIPP KIEF"
+    // FOR IMPROVED FILE AND DIRECTORY ICONS FOR VS CODE UI
+    // - Provides better visually distinct icons for different file types and
+    // directories, for clearer VS Code UI
     "PKief.material-icon-theme",
 
-    // Indent Rainbow - Colorizes indentations
-    // Makes indentation levels visually distinct with alternating colors
-    // Improves code readability
-    "oderwat.indent-rainbow"
+    // RECOMMEND "TODO TREE" EXTENSION BY "GRUNTFUGGLY"
+    // FOR HIGHLIGHTING COMMENT TAGS IN CODE, SUCH AS "TODO"
+    // - From code comments finds and highlights TODO, FIXME, and other comment
+    // tags, for a clearer VS Code UI
+    // TODO finalise implementation of this extension, especially in regard to
+    // .vscode/settings.json
+    "Gruntfuggly.todo-tree"
   ],
 
-  // Extensions that might conflict with this configuration
-  // None identified currently, but can be added if conflicts arise
+  // UNWANTED EXTENSIONS THAT CONFLICT WITH THE PROPER FUNCTIONALITY OF THIS
+  // PROJECT WORKSPACE SETUP
+  // - None identified thus far
   "unwantedRecommendations": []
 }
